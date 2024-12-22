@@ -21,7 +21,7 @@ def main():
     print(f"--- Begin report of {file_name} ---")
     print(f"{word_count} words found in the document\n")
 
-    for char in char_count:
+    for char, count in sorted(char_count.items()):
       print(f"The {char} character was found {char_count[char]} times")
     
     print("--- End report ---")
